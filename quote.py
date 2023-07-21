@@ -2,6 +2,17 @@ import streamlit as st
 import requests
 import time
 
+
+hide_footer = """
+
+<style>
+footer {visibility: hidden;}
+</style>
+
+"""
+
+st.markdown(hide_footer, unsafe_allow_html=True)
+
 def quote():
     # category = 'happiness'
     api_url = 'https://api.api-ninjas.com/v1/quotes'
@@ -33,12 +44,20 @@ def main():
             time.sleep(1)
 
             st.subheader(quote_list[0])
-            st.write(f"**Author:** :red[***{quote_list[1]}***]")
-            st.write(f"**category:** :red[***{quote_list[2]}***]")
 
-            st.divider()
+            st.write(f"**Author:** :red[***{quote_list[1]}***]")
+            st.write(f"**Category:** :red[***{quote_list[2]}***]")
+
         st.button('**Refresh**', on_click=refresh)
-    
+
+    st.divider()
+    st.caption("Made with :sparkling_heart: by Mohit")
+
+
+
+if __name__ == "__main__":
+    main()
+   
 
 
 
