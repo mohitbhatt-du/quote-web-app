@@ -51,7 +51,7 @@ def main():
         st.button('**Refresh**', on_click=refresh)
 
     st.divider()
-    st.caption("Made with :sparkling_heart: by Mohit")
+    st.caption("Made with :sparkling_heart: by **Mohit**")
 
 
 
