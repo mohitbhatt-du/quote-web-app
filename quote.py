@@ -11,9 +11,8 @@ footer {visibility: hidden;}
 
 """
 
-st.markdown(hide_footer,
-            title="Random Quotes" , unsafe_allow_html=True)
-
+st.markdown(hide_footer, unsafe_allow_html=True)
+st.set_page_config(title="Random Quotes",layout="wide")
 def quote():
     # category = 'happiness'
     api_url = 'https://api.api-ninjas.com/v1/quotes'
