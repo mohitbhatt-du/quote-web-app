@@ -11,7 +11,8 @@ footer {visibility: hidden;}
 
 """
 
-st.markdown(hide_footer, unsafe_allow_html=True)
+st.markdown(hide_footer,
+            title="Random Quotes" , unsafe_allow_html=True)
 
 def quote():
     # category = 'happiness'
