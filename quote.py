@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import time
 
-st.set_page_config(page_title="Random Quotes")
+st.set_page_config(page_title="Random Quotes", page_icon="👌")
 hide_footer = """
 
 <style>
